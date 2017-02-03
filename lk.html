@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bagar</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="headerLk">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8 col-sm-4 col-md-3 col-lg-3">
+					<img src="img/logoWhite.png" alt="" class="headerLk__logo">
+				</div>
+				<div class="col-xs-4 visible-xs">
+					<div class="header__langChoose">
+						<div class="header__langChooseItem">
+							<img src="img/rus.png" alt="" class="header__langChooseItemImg">
+						</div>
+						<a href="#" class="header__langChooseHideItem">
+							<img src="img/eng.png" alt="" class="header__langChooseItemImg">
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-9 col-sm-5 col-sm-offset-2 col-md-4 col-md-offset-4 col-lg-3 col-lg-offset-5">
+					<div class="headerLk__profile">
+						<img src="img/user.png" alt="" class="headerLk__profileImg">
+						<div class="headerLk__profileName">Родион Юрков</div>
+						<div class="headerLk__profileId">iD:159865</div>
+
+						<div class="headerLk__profileHide">
+							<a href="#" class="headerLk__profileHideLink headerLk__profileHideLink-active">Личный кабинет</a>
+							<a href="#" class="headerLk__profileHideLink">Сбросить пароль</a>
+							<a href="#" class="headerLk__profileHideLink">Выход</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-3 visible-xs">
+					<a href="#" class="headerLk__menu" id='menu-toggle'></a>
+				</div>
+				<div class="col-sm-1 col-md-1 col-lg-1 hidden-xs">
+					<div class="header__langChoose">
+						<div class="header__langChooseItem header__langChooseItem-lk">
+							<img src="img/rus.png" alt="" class="header__langChooseItemImg">
+						</div>
+						<a href="#" class="header__langChooseHideItem header__langChooseItem-lk">
+							<img src="img/eng.png" alt="" class="header__langChooseItemImg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="navLk">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10">
+					<a href="#" data-section='bot' class="navLk__item navLk__item-active"><span class="navLk__itemIcon">&#xe905;</span>АРЕНДА БОТОВ</a>
+					<a href="#" data-section='ip' class="navLk__item"><span class="navLk__itemIcon navLk__itemIcon-small">&#xe90a;</span>СМЕНА IP</a>
+					<a href="#" data-section='download' class="navLk__item"><span class="navLk__itemIcon">&#xe903;</span>СКАЧАТЬ УТИЛИТУ</a>
+					<a href="#" data-section='faq' class="navLk__item"><span class="navLk__itemIcon navLk__itemIcon-small">&#xe90d;</span>F.A.Q.</a>
+				</div>
+				<div class="col-md-2 hidden-sm">
+					<a href="#" data-section='bot' class="navLk__item"><span class="navLk__support"></span>ПОДДЕРЖКА</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="sectionInfo">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-7 col-lg-4 col-lg-offset-8">
+					<div class="lkBalance">
+						<div class="col-xs-4 col-sm-4 lkBalance__wallet">
+							<span class="lkBalance__walletIcon">&#xe90c;</span>
+							<p class="lkBalance__walletText">ВАШ БАЛАНС</p>
+						</div>
+						<div class="col-xs-8 col-sm-8">
+							<p class="lkBalance__walletInfo lkBalance__walletInfo-blue">99549 BP</p>
+							<p class="lkBalance__walletInfo">100500 BAGAR COINS</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="orderBot rate slideSection" id='bot'>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="lkSectionHeader">Аренда ботов</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="orderBot__text hidden-xs">В этом разделе можно арендовать необходимое количество ботов на ограниченное время. Для удобства, имеется несколько видов услуг. После выбора услуги и оплаты, можете заходить в игру и наслаждаться прелестями игры. В начале всем ботам будет присвоено имя "bagar.io", через время они будут менять имя на ваше. После окончания срока аренды, все боты перестанут появлятся на карте.</p>
+					<p class="orderBot__text visible-xs">В этом разделе можно арендовать необходимое количество ботов на ограниченное время.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<p class="orderBot__text orderBot__text-error">
+						Перед покупкой ботов установите наше расширение из раздела "Скачать утилиту"! Для лучшего эффекта, рекомендуем использовать режим игры "Party"!
+					</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1">
+					<p class="orderBot__text orderBot__text-warning">
+						Пожалуйста, переустановите расширение перед покупкой ботов! Актуальная версия расширения: 5.0.8
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 rate__head">
+					<div class="rate__status">
+						<div class="rate__statusItem rate__status-on">SHOP STATUS: <span>ON</span></div>
+						<div class="rate__statusItem rate__status-on">SERVER STATUS: <span>ON</span></div>
+					</div>
+					<a href="#" data-tab='1' class="rate__headerLink rate__headerLink-active">Standart</a>
+					<a href="#" data-tab='2' class="rate__headerLink">Bagar Points</a>
+				</div>
+			</div>
+			<div class="row rate__row" id='rate__row1'>
+				<div class="rate__left"></div>
+				<div class="rate__right"></div>
+				<div class="col-sm-6 col-md-3">
+					<div class="rate__item">
+						<div class="rate__itemHead">
+							<div class="rate__itemHeadicon">+4</div>
+							<h3 class="rate__itemHeader">NewBie</h3>
+						</div>
+						<div class="rate__coins">
+							<div class="rate__coinsIcon">&#xe902;</div>
+							<div class="rate__coinsText"><span>80</span> Coins</div>
+						</div>
+						<ul class="rate__info">
+							<li class="rate__infoItem">20 bots</li>
+							<li class="rate__infoItem">2 hours</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Custom nick</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Active time</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="rate__buy">Купить</a>
+						<div class="rate__attention rate__attention-show">You must select the number of bots and rental period</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="rate__item hidden-xs">
+						<div class="rate__itemHead">
+							<div class="rate__itemHeadicon">+45</div>
+							<h3 class="rate__itemHeader">Skilled</h3>
+						</div>
+						<div class="rate__coins">
+							<div class="rate__coinsIcon">&#xe902;</div>
+							<div class="rate__coinsText"><span>900</span> Coins</div>
+						</div>
+						<ul class="rate__info">
+							<li class="rate__infoItem">50 bots</li>
+							<li class="rate__infoItem">4 hours</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Custom nick</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Active time</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="rate__buy">Купить</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="rate__item hidden-sm hidden-xs">
+						<div class="rate__itemHead">
+							<div class="rate__itemHeadicon">+195</div>
+							<h3 class="rate__itemHeader">Profi</h3>
+						</div>
+						<div class="rate__coins">
+							<div class="rate__coinsIcon">&#xe902;</div>
+							<div class="rate__coinsText"><span>3900</span> Coins</div>
+						</div>
+						<ul class="rate__info">
+							<li class="rate__infoItem">100 bots</li>
+							<li class="rate__infoItem">4 hours</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-normal">Custom nick</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+								<a href='#' class="rate__setNick">set custom nick</a>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Active time</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="rate__buy">Купить</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="rate__item hidden-sm hidden-xs">
+						<div class="rate__itemHead">
+							<div class="rate__itemHeadicon">+0</div>
+							<h3 class="rate__itemHeader">Lego</h3>
+						</div>
+						<div class="rate__coins">
+							<div class="rate__coinsIcon">&#xe902;</div>
+							<div class="rate__coinsText"><span>80</span> Coins</div>
+						</div>
+						<ul class="rate__info">
+							<li class="rate__infoItem rate__infoItem-big">
+								<button type='button' class="rate__minus">&#xe906;</button>
+								100 bots
+								<button type='button' class="rate__plus">&#xe908;</button>
+							</li>
+							<li class="rate__infoItem rate__infoItem-big">
+								<button type='button' class="rate__minus">&#xe906;</button>
+								4 hours
+								<button type='button' class="rate__plus">&#xe908;</button>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Custom nick</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+								<div class="rate__off">OFF</div>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Active time</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+								<div class="rate__off">OFF</div>
+							</li>
+						</ul>
+						<a href="#" class="rate__buy">Купить</a>
+					</div>
+				</div>
+			</div>
+			<div class="row rate__row hide" id='rate__row2'>
+				<div class="rate__left"></div>
+				<div class="rate__right"></div>
+				<div class="col-sm-6 col-md-3">
+					<div class="rate__item">
+						<div class="rate__itemHead">
+							<div class="rate__itemHeadicon">+4</div>
+							<h3 class="rate__itemHeader">NewBie2</h3>
+						</div>
+						<div class="rate__coins">
+							<div class="rate__coinsIcon">&#xe902;</div>
+							<div class="rate__coinsText"><span>80</span> Coins</div>
+						</div>
+						<ul class="rate__info">
+							<li class="rate__infoItem">20 bots</li>
+							<li class="rate__infoItem">2 hours</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Custom nick</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Active time</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="rate__buy">Купить</a>
+						<div class="rate__attention rate__attention-show">You must select the number of bots and rental period</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="rate__item hidden-xs">
+						<div class="rate__itemHead">
+							<div class="rate__itemHeadicon">+45</div>
+							<h3 class="rate__itemHeader">Skilled2</h3>
+						</div>
+						<div class="rate__coins">
+							<div class="rate__coinsIcon">&#xe902;</div>
+							<div class="rate__coinsText"><span>900</span> Coins</div>
+						</div>
+						<ul class="rate__info">
+							<li class="rate__infoItem">50 bots</li>
+							<li class="rate__infoItem">4 hours</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Custom nick</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Active time</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="rate__buy">Купить</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="rate__item hidden-sm hidden-xs">
+						<div class="rate__itemHead">
+							<div class="rate__itemHeadicon">+195</div>
+							<h3 class="rate__itemHeader">Profi2</h3>
+						</div>
+						<div class="rate__coins">
+							<div class="rate__coinsIcon">&#xe902;</div>
+							<div class="rate__coinsText"><span>3900</span> Coins</div>
+						</div>
+						<ul class="rate__info">
+							<li class="rate__infoItem">100 bots</li>
+							<li class="rate__infoItem">4 hours</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-normal">Custom nick</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+								<a href='#' class="rate__setNick">set custom nick</a>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Active time</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<a href="#" class="rate__buy">Купить</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="rate__item hidden-sm hidden-xs">
+						<div class="rate__itemHead">
+							<div class="rate__itemHeadicon">+0</div>
+							<h3 class="rate__itemHeader">Lego2</h3>
+						</div>
+						<div class="rate__coins">
+							<div class="rate__coinsIcon">&#xe902;</div>
+							<div class="rate__coinsText"><span>80</span> Coins</div>
+						</div>
+						<ul class="rate__info">
+							<li class="rate__infoItem rate__infoItem-big">
+								<button type='button' class="rate__minus">&#xe906;</button>
+								100 bots
+								<button type='button' class="rate__plus">&#xe908;</button>
+							</li>
+							<li class="rate__infoItem rate__infoItem-big">
+								<button type='button' class="rate__minus">&#xe906;</button>
+								4 hours
+								<button type='button' class="rate__plus">&#xe908;</button>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Custom nick</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+								<div class="rate__off">OFF</div>
+							</li>
+							<li class="rate__infoItem">
+								<span class="rate__infoItem-through">Active time</span>
+								<div class="rate__ask">
+									&#xe909;
+									<div class="rate__askHide">
+										Our bots will own your name in game.
+										<br>
+										<span>This option disabled  in current plan!</span>
+									</div>
+								</div>
+								<div class="rate__off">OFF</div>
+							</li>
+						</ul>
+						<a href="#" class="rate__buy">Купить</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="orderBot slideSection hide" id='ip'>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="lkSectionHeader">СМЕНА IP</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="orderBot__text">Если ваши боты перестали появляется на карте скорее всего проблема в том, что у Вас изменился IP-адрес. В данном разделе можно сменить ваш IP.</p>
+				</div>
+			</div>
+			<div class="orderBot__ip">
+				<div class="col-xs-12 col-sm-6 text-center">
+					<div class="orderBot__ipItem orderBot__ipItem-br">IP при заказе ботов: 37.193.176.104</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 text-center">
+					<div class="orderBot__ipItem">Ваш текущий IP: 5.129.97.27</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-md-8 col-lg-9">
+					<p class="orderBot__text orderBot__text-error">
+						Ваш текущий IP-адрес не совпадает с IP в нашей базе, пожалуйста нажмите на кнопку "Изменить IP".
+						<br>Если проблема не решилась, пожалуйста напишите в поддержку
+					</p>
+				</div>
+				<div class="col-sm-4 col-md-4 col-lg-2 col-lg-offset-1">
+					<a href="#" class="orderBot__button">ИЗМЕНИТЬ IP</a>
+				</div>
+			</div>
+			<div class="orderBot__ipSucessChange">
+				<div class="orderBot__ipSucessChangeButton col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">IP адрес успешно обновлен. Можете заходить в игру!</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="orderBot slideSection hide" id='download'>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="lkSectionHeader">СКАЧАТЬ УТИЛИТУ</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="orderBot__text">В данном разделе вы можете скачать наше расширение. Утилита необходима для того чтобы боты могли находить вас на карте. <strong>Внимание! Отключите или удалите другие расширения для agar.io для правильной работы ваших помощников :)</strong></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="orderBot__button2Wr">
+					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+						<a href="#" class="orderBot__button2">СКАЧАТЬ РАСШИРЕНИЕ ДЛЯ CHROME / YANDEX</a>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<p class="orderBot__text orderBot__text-info hidden-xs">
+						<strong>При установке расширения пишет ошибку? Вероятно ваш компьютер был заражен. Исправить проблему можно следующим образом:</strong> <br>
+						1.   Заходите по адресу c:\Windows\System32\drivers\etc\ <br>
+						2.  Открываете файл hosts с помощью блокнота. <br>
+						3.  Ищете строчку 127.0.0.1 clients2.google.com и удаляете ее. Сохраняете изменения в файле.
+					</p>
+					<p class="orderBot__text visible-xs">
+						<strong>При установке расширения пишет ошибку? Вероятно ваш компьютер был заражен. Исправить проблему можно следующим образом:</strong>
+					</p>
+					<div class="orderBot__textHeaderHr visible-xs"></div>
+					<div class="orderBot__textHeader visible-xs">1</div>
+					<p class="orderBot__text visible-xs">
+						1.   Заходите по адресу c:\Windows\System32\drivers\etc\
+					</p>
+					<div class="orderBot__textHeaderHr visible-xs"></div>
+					<div class="orderBot__textHeader visible-xs">2</div>
+					<p class="orderBot__text visible-xs">
+						2.  Открываете файл hosts с помощью блокнота.
+					</p>
+					<div class="orderBot__textHeaderHr visible-xs"></div>
+					<div class="orderBot__textHeader visible-xs">3</div>
+					<p class="orderBot__text visible-xs">
+						3.  Ищете строчку 127.0.0.1 clients2.google.com и удаляете ее. Сохраняете изменения в файле.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="orderBot slideSection hide" id='faq'>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2 class="lkSectionHeader">F.A.Q.</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<p class="orderBot__text">Мы заметили что такие вопросы бывают и поэтому перед обращением в поддержку мы рекомендуем ознакомиться с распространенными проблемами и их решениями</p>
+				</div>
+			</div>
+
+			<div class="orderBot__question">
+				<div class="orderBot__questionNum">01</div>
+				<div class="orderBot__questionText"><strong><span>1</span>Проблема:</strong> Выводится сообщение "У вас нет доступных ботов"</div>
+			</div>
+			<div class="orderBot__answer">
+				<strong><span>1</span>Решение:</strong>Возможно у вас изменился IP, нажмите сверху вкладку "Смена IP". Если IP адрес при регистраци отличается от текущего, то нажмите
+соответствующую кнопку. После этого обновите страницу с игрой.
+			</div>
+
+			<div class="orderBot__question">
+				<div class="orderBot__questionNum">02</div>
+				<div class="orderBot__questionText"><strong><span>1</span>Проблема:</strong> Выводится сообщение "У вас нет доступных ботов"</div>
+			</div>
+			<div class="orderBot__answer">
+				<strong><span>1</span>Решение:</strong>Возможно у вас изменился IP, нажмите сверху вкладку "Смена IP". Если IP адрес при регистраци отличается от текущего, то нажмите
+соответствующую кнопку. После этого обновите страницу с игрой.
+			</div>
+
+			<h3 class="orderBot__socialHeader">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+			<p class="orderBot__text">Если вы желаете общения в живом режиме, вы можете написать нам ВКонтакте</p>
+			<a href='#' class="orderBot__socialButton">ОТПРАВИТЬ СООБЩЕНИЕ ВКОНТАКТЕ</a>
+		</div>
+	</section>
+
+	<section class="payment">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="payment__body">
+						<h3 class="payment__header">Подтверждение платежа</h3>
+						<p class="payment__text">Совершая оплату, вы автоматически соглашаетесь с текущими правилами</p>
+						<div class="payment__accept"><input type="radio" checked>Я согласен с <a href="#">пользовательским соглашением</a></div>
+						<a href="#" class="payment__button">ПЕРЕЙТИ К ОПЛАТЕ</a>
+						<a href="#" class="payment__button2">ОТКАЗАТЬСЯ ОТ ПЛАТЕЖА</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="lkFooter">
+		<div class="container">
+			<div class="row col-xs-12">
+				<p class="lkFooter__copy">All rights reserved. slibot.io © 2016</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

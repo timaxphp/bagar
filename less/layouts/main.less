@@ -1,0 +1,529 @@
+.header{
+	background: #000 url('../img/header.jpg') center no-repeat scroll;
+	background-size: cover;
+	&__logo{
+		margin-top: 25px;
+	}
+	&__link{
+		margin-top: 40px;
+		font-family: 'Fregat-Bold';
+		.button-v1
+	}
+	&__langChoose{
+		position: absolute;
+		z-index: 99999;
+		left: 0;
+		top: 40px;
+		width: 100%;
+		line-height: 39px;
+		text-align: center;
+		&:hover .header__langChooseHideItem{
+			display: block;
+		}
+	}
+	&__langChooseItem{
+		border: solid 1px rgba(255,255,255, .2);
+		background: rgba(255,255,255, .2);
+		border-radius: 20px;
+		margin-left: 20px;
+		&:hover{
+			background: rgba(255,255,255, .3);
+			cursor: pointer;
+		}
+	}
+	&__langChooseHideItem{
+		position: relative;
+		z-index: 9999;
+		background: rgba(0,0,0, .4);
+		border-radius: 20px;
+		margin-left: 20px;
+		margin-top: 8px;
+		display: none;
+		&:hover{
+			background: rgba(255,255,255, .4);
+		}
+	}
+	&__h1{
+		font-family: 'Fregat-Bold';
+		text-align: center;
+		font-size: 70px;
+		color: #fff;
+		margin-top: 90px;
+		text-transform: uppercase;
+	}
+	&__h2{
+		 font-family: 'SFUIDisplay-Thin';
+		 font-size: 18px;
+		 text-transform: uppercase;
+		 text-align: center;
+		 margin-top: 35px;
+		 color: #fff;
+		 letter-spacing: 5px;
+	}
+	&__nav{
+		margin-top: 145px;
+		margin-bottom: 65px;
+		display: block;
+		color: #fff;
+		text-align: center;
+		background: transparent url('../img/header-nav.png') center no-repeat scroll;
+		background-size: 100% 100%;
+		height: 70px;
+		&:hover, &:focus, &:active{
+			color: @primaryYellow;
+			text-decoration: none;
+			background: transparent url('../img/header-nav2.png') center no-repeat scroll;
+			background-size: 100% 100%;
+		}
+	}
+	&__nav-center{
+		margin: 145px 55px 65px 55px
+	}
+	&__navIcon{
+		position: relative;
+		top: 8px;
+		font-family: 'icons';
+		font-size: 95px;
+		line-height: 2px;
+	}
+	&__navText{
+		position: relative;
+		top: 57px;
+		text-transform: uppercase;
+		font-size: 22px;
+		font-family: 'Fregat-Bold';
+		margin: 0;
+	}
+}
+.startGame{
+	background: #1e1e20;
+	&__info{
+		padding: 0 50px 60px 35px;
+		background: transparent url('../img/startgame.png') left bottom no-repeat scroll;
+	}
+	&__header{
+		color: @primaryYellow;
+		font-size: 42px;
+		font-family: 'Fregat-Bold';
+		margin-top: 55px;
+		margin-bottom: 20px;
+	}
+	&__text{
+		font-family: 'SFUIDisplay-Light';
+		color: #8d8d8d;
+	}
+	&__item{
+		position: relative;
+		border: solid 2px @primaryYellow;
+		color: @primaryYellow;
+		line-height: 70px;
+		font-size: 20px;
+		font-family: 'Fregat-Bold';
+		text-align: right;
+		padding-right: 25px;
+		margin-top: 75px;
+		margin-left: 20px;
+		border-radius: 35px;
+		text-transform: uppercase;
+	}
+	&__item-pushRight{
+		position: relative;
+		right: -50px;
+	}
+	&__item-pushRight2{
+		position: relative;
+		right: -25px;
+	}
+	&__itemSpan{
+		position: absolute;
+		left: -2px;
+		top: -2px;
+		height: 74px;
+		width: 74px;
+		text-align: center;
+		background: @primaryYellow;
+		color: @primaryBlack;
+		border-radius: 100%;
+		font-size: 40px;
+		line-height: 73px;
+	}
+
+	&__item-active{
+		color: @primaryBlack;
+		background: @primaryYellow;
+		.startGame__itemSpan{
+			background: @primaryBlack;
+			color: @primaryYellow;
+			border: solid 2px @primaryYellow;
+			margin-top: -2px;
+			margin-left: -4px;
+			width: 78px;
+			height: 78px;
+		}
+	}
+	.container{
+		position: relative;
+	}
+	&__arrow{
+		position: absolute;
+		left: 518px;
+		bottom: 0;
+		border-left: solid 13px transparent;
+		border-right: solid 13px transparent;
+		border-bottom: solid 15px #e7e7e7;
+	}
+}
+.download{
+	background: #e7e7e7;
+	&__info{
+		padding-left: 35px;
+		background: transparent url('../img/download.png') left bottom no-repeat scroll;
+	}
+	&__header{
+		font-size: 28px;
+		font-family: 'Fregat-Bold';
+		color: @primaryBlack;
+		margin-top: 55px;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+	&__text{
+		color: #737373;
+		font-family: 'SFUIDisplay-Light';
+		margin-bottom: 50px;
+	}
+	&__link{
+		font-size: 16px;
+		font-family: 'Fregat-Bold';
+		margin-top: 100px;
+		.button-v1
+	}
+}
+.rate{
+	background: transparent url('../img/rate.png') center repeat scroll;
+	&__status{
+		font-family: 'Fregat';
+		font-size: 14px;
+		color: #939393;
+		text-transform: uppercase;
+		position: absolute;
+		top: -7px;
+		right: 85px;
+		&-on span{
+			color: #4eaf50;
+			font-family: 'Fregat-Bold';
+		}
+	}
+	&__statusItem{
+		display: inline-block;
+		margin-left: 20px;
+	}
+	&__row{
+		margin-left: -25px;
+		margin-right: -25px;
+	}
+	&__head{
+		background: transparent url('../img/rate-b.png') center no-repeat scroll;
+		background-size: 100% 100%;
+		margin-top: 105px;
+	}
+	&__header{
+		font-size: 42px;
+		font-family: 'Fregat-Bold';
+		margin: -20px 0 0 0;
+	}
+	&__headerLink{
+		font-size: 20px;
+		color: #737373;
+		font-family: 'Fregat-Bold';
+		margin-top: 15px;
+		padding: 15px 20px 5px 20px;
+		display: inline-block;
+		&:hover, &:focus, &:active{
+			text-decoration: none;
+			color: #737373;
+		}
+	}
+	&__headerLink-active{
+		color: @primaryBlack;
+		border-bottom: solid 5px @primaryYellow;
+		&:hover, &:focus, &:active{
+			color: @primaryBlack;
+		}
+	}
+	&__item{
+		padding: 0 25px;
+	}
+	&__itemHeadicon{
+		font-size: 18px;
+		font-family: 'Fregat-Bold';
+		color: #fff;
+		display: inline-block;
+		padding: 2px 15px 2px 35px;
+		background: #4eaf50 url('../img/logo2.png') left center no-repeat scroll;
+		background-position: 13px 4px;
+	}
+	&__itemHead{
+		margin-top: 30px;
+	}
+	&__itemHeader{
+		display: inline-block;
+		margin: 0;
+		font-size: 32px;
+		font-family: 'SFUIDisplay-Thin';
+		text-transform: uppercase;
+		vertical-align: middle;
+		margin-left: 40px;
+	}
+	&__coins{
+		text-align: center;
+		margin: 40px 0 50px 0;
+	}
+	&__coinsIcon{
+		display: inline-block;
+		font-family: 'icons';
+		font-size: 80px;
+		line-height: 50px;
+		position: relative;
+		top: 20px;
+		left: -15px;
+	}
+	&__coinsText{
+		display: inline-block;
+		text-align: left;
+		font-size: 22px;
+		font-family: 'SFUIDisplay-Thin';
+		& span{
+			display: block;
+			font-size: 38px;
+			line-height: 30px;
+		}
+	}
+	&__info{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	&__infoItem{
+		padding: 15px 20px;
+		background: #e7e7e7;
+		font-size: 18px;
+		font-family: 'Fregat-Bold';
+		position: relative;
+	}
+	&__infoItem-through{
+		text-decoration: line-through;
+		font-family: 'Fregat';
+		color: #737373;
+	}
+	&__infoItem-normal{
+		font-family: 'Fregat';
+	}
+	&__infoItem:nth-child(even){
+		background: #fff;
+	}
+	&__infoItem-big{
+		padding: 15px 60px;
+	}
+	&__ask{
+		font-family: 'icons';
+		font-size: 30px;
+		display: inline-block;
+		position: absolute;
+		top: 9px;
+		left: 135px;
+		color: #737373;
+		cursor: pointer;
+		&:hover .rate__askHide{
+			display: block;
+		}
+	}
+	&__askHide{
+		display: none;
+		position: absolute;
+		left: -90px;
+		bottom: 55px;
+		width: 205px;
+		z-index: 99999;
+		background: rgba(0,0,0,.85);
+		padding: 20px;
+		border-radius: 20px;
+		font-size: 14px;
+		color: #fff;
+		font-family: 'SFUIDisplay-Light';
+		span{
+			display: inline-block;
+			font-size: 12px;
+			margin-top: 10px;
+		}
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: -13px;
+			left: 50%;
+			border-top: solid 13px rgba(0, 0, 0, .85);
+			border-left: solid 13px transparent;
+			border-right: solid 13px transparent;
+			margin-left: -13px;
+		}
+	}
+	&__setNick{
+		position: relative;
+		top: -2px;
+		font-size: 12px;
+		font-family: 'Fregat';
+		color: #4eaf50;
+		margin-left: 55px;
+		&:hover, &:focus, &:active{
+			color: #4eaf50;
+		}
+	}
+	&__plus, &__minus{
+		display: inline-block;
+		font-family: 'icons';
+		color: #888;
+		position: absolute;
+		border: none;
+		outline: none;
+		background: none;
+		padding: 0;
+	}
+	&__plus{
+		top: 17px;
+		left: 150px;
+	}
+	&__minus{
+		top: 17px;
+		left: 20px;
+	}
+	&__off{
+		display: inline-block;
+		font-family: 'Fregat-Bold';
+		font-size: 12px;
+		color: #fff;
+		background: #888;
+		padding: 2px 14px 1px 14px;
+		border-radius: 10px;
+		position: absolute;
+		top: 16px;
+		right: 50px;
+	}
+	&__attention{
+		display: none;
+		position: absolute;
+		left: 25px;
+		bottom: 10px;
+		width: 85%;
+		padding: 10px 30px;
+		background: #d8403f;
+		color: #fff;
+		border-radius: 20px;
+		text-align: center;
+		&:before{
+			content: '';
+			display: block;
+			border-bottom: solid 8px #d8403f;
+			border-left: solid 8px transparent;
+			border-right: solid 8px transparent;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: -8px;
+		}
+	}
+	&__attention-show{
+		display: block;
+	}
+	&__buy{
+		width: 100%;
+		text-align: center;
+		font-family: 'Fregat-Bold';
+		color: @primaryBlack;
+		margin-top: 30px;
+		margin-bottom: 90px;
+		.button-v1
+	}
+}
+.about{
+	background: #000 url('../img/about.jpg') center no-repeat scroll;
+	background-size: cover;
+	&__header{
+		font-size: 42px;
+		font-family: 'Fregat-Bold';
+		color: @primaryYellow;
+		text-transform: uppercase;
+		margin-top: 80px;
+		&:after{
+			display: block;
+			content: '';
+			width: 60px;
+			height: 7px;
+			background: @primaryYellow;
+			margin: 30px 0;
+		}
+	}
+	&__text{
+		color: #9f9f9f;
+		font-family: 'SFUIDisplay-Light';
+		margin-bottom: 80px;
+	}
+}
+.footer{
+	background: transparent url('../img/rate.png') center repeat scroll;
+	&__left{
+		text-align: right;
+		padding-right: 70px;
+		background: transparent url('../img/footer.png') top right no-repeat scroll;
+	}
+	&__right{
+		padding-left: 65px;
+	}
+	&__header{
+		font-size: 42px;
+		color: @primaryBlack;
+		font-family: 'Fregat-Bold';
+		margin: 80px 0;
+		text-transform: uppercase;
+	}
+	&__link{
+		text-transform: uppercase;
+		color: @primaryBlack;
+		font-size: 14px;
+		font-family: 'SFUIDisplay-Regular';
+		display: block;
+		margin: 38px 0;
+		&:hover, &:focus, &:active{
+			color: @primaryBlack;
+		}
+	}
+	&__copy{
+		font-size: 12px;
+		color: #9f9f9f;
+		font-family: 'SFUIDisplay-Light';
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	&__video{
+		display: block;
+		margin-top: -230px;
+		margin-bottom: 50px;
+	}
+	&__socialLink{
+		display: block;
+		font-family: 'SFUIDisplay-Light';
+		font-size: 16px;
+		color: @primaryBlack;
+		padding: 10px 0 10px 50px;
+		margin-bottom: 15px;
+		&:hover, &:focus, &:active{
+			color: @primaryBlack;
+		}
+	}
+	&__socialLink-vk{
+		background: transparent url('../img/vk.png') left center no-repeat scroll;
+	}
+	&__socialLink-fb{
+		background: transparent url('../img/fb.png') left center no-repeat scroll;
+	}
+}

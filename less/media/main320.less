@@ -1,0 +1,279 @@
+@media (max-width: 767px) {
+	.container{
+		padding: 0 15px;
+	}
+	.header{
+		overflow: hidden;
+		&__logoBg{
+			display: block;
+			width: 110%;
+			margin: 0 -15px 0 -15px;
+			padding: 15px 40px;
+			background: rgba(0,0,0,.6);
+		}
+		&__logo{
+			display: block;
+			margin: 10px auto;
+		}
+		&__link{
+			margin-top: 20px;
+			display: block;
+			text-align: center;
+		};
+		&__langChoose{
+			top: 20px;
+		}
+		&__h1{
+			font-size: 22px;
+			margin-top: 40px;
+		}
+		&__h2{
+			font-size: 12px;
+			letter-spacing: 3px;
+			margin-top: 15px;
+		}
+		&__nav{
+			background: none;
+			&:hover, &:focus, &:active{
+				background: none;
+			}
+		}
+		&__navText{
+			font-size: 12px;
+			top: 40px;
+		}
+		&__navIcon{
+			font-size: 70px;
+		}
+		&__nav-left{
+			margin: 60px 15px 50px 0;
+		}
+		&__nav-center{
+			margin: 60px 15px 50px 15px;
+		}
+		&__nav-right{
+			margin: 60px 0 50px 15px;
+		}
+	}
+	.startGame{
+		min-height: 280px;
+		&__header{
+			font-size: 34px;
+			transform: rotate(-90deg);
+			position: absolute;
+			border-bottom: dashed 1px @primaryYellow;
+			padding-bottom: 5px;
+			left: -60px;
+			top: 60px;
+		}
+		&__text{
+			font-size: 14px;
+		}
+		&__info{
+			padding-right: 25px;
+			background: none;
+		}
+		&__item{
+			width: 150px;
+			margin-top: 20px;
+			font-size: 16px;
+			line-height: 50px;
+			position: absolute;
+		}
+		&__itemSpan{
+			height: 53px;
+			width: 53px;
+			line-height: 53px;
+		}
+		&__item-active .startGame__itemSpan{
+			height: 58px;
+			width: 58px;
+		}
+		&__item-pushRight{
+			right: 50px;
+			top: -40px;
+		}
+		&__item-pushRight2{
+			right: 50px;
+			top: 30px;
+		}
+		&__item-pushRight3{
+			right: 50px;
+			top: 100px;
+		}
+		&__arrow{
+			right: 10px;
+			top: 56px;
+			left: inherit;
+			border-bottom: solid 15px @primaryYellow;
+			transform: rotate(-90deg);
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				right: -13px;
+				top: 14px;
+				width: 26px;
+				height: 17px;
+				background: @primaryYellow;
+			}
+		}
+	}
+	.download{
+		&__info{
+			background: none;
+			text-align: center;
+			padding: 0;
+		}
+		&__header{
+			font-size: 22px;
+			margin-top: 30px;
+		}
+		&__text{
+			font-size: 14px;
+			margin-bottom: 30px;
+		}
+		&__link{
+			margin: 10px 35px 50px 35px;
+			text-align: center;
+			line-height: 20px;
+			padding: 13px 20px;
+		}
+	}
+	.rate{
+		position: relative;
+		&__left, &__right{
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 280px;
+			cursor: pointer;
+			z-index: 99999;
+		}
+		&__left{
+			background: transparent url('../img/arrow.png') center no-repeat scroll;
+			background-size: 100% 100%;
+			left: 20px;
+			&:hover, &:active, &:focus{
+				background: transparent url('../img/arrowH.png') center no-repeat scroll;
+				background-size: 100% 100%;
+			}
+		}
+		&__right{
+			background: transparent url('../img/arrow.png') center no-repeat scroll;
+			background-size: 100% 100%;
+			transform: rotate(180deg);
+			right: 20px;
+			&:hover, &:active, &:focus{
+				background: transparent url('../img/arrowH.png') center no-repeat scroll;
+				background-size: 100% 100%;
+			}
+		}
+		&__row{
+			margin: 0 25px;
+		}
+		&__header{
+			position: static;
+			padding: 0;
+			font-size: 30px;
+			text-align: center;
+			margin: 0;
+		}
+		&__head{
+			background: none;
+			border-bottom: solid 1px #e7e7e7;
+			margin-top: 40px;
+		}
+		&__headerLink{
+			margin-top: 40px;
+		}
+		&__itemHeader{
+			margin: 0 0 0 15px;
+			font-size: 26px;
+		}
+		&__infoItem{
+			font-size: 14.5px;
+			padding: 10px 15px
+		}
+		&__infoItem-big{
+			padding: 10px 35px;
+		}
+		&__coinsText span{
+			font-size: 30px;
+		}
+		&__coinsIcon{
+			font-size: 70px;
+			top: 12px;
+		}
+		&__ask{
+			top: 3px;
+			left: 105px;
+		}
+		&__setNick{
+			position: absolute;
+			right: 0;
+			top: 3px;
+			width: 70px;
+		}
+		&__off{
+			top: 11px;
+			right: 15px;
+		}
+		&__minus, &__plus{
+			top: 12px;
+		}
+		&__minus{
+			left: 12px;
+		}
+		&__plus{
+			left: 105px;
+		}
+		&__attention{
+			font-size: 14px;
+			padding: 10px 10px;
+		}
+	}
+	.about{
+		text-align: center;
+		&__header{
+			font-size: 30px;
+			margin-top: 40px;
+			margin-bottom: 30px;
+			&:after{
+				display: none;
+			}
+		}
+		&__text{
+			font-size: 14px;
+			margin-bottom: 110px;
+		}
+	}
+	.footer{
+		&__header{
+			font-size: 34px;
+		}
+		&__left{
+			background: none;
+			text-align: left;
+		}
+		&__right{
+			padding-left: 20px;
+		}
+		&__video{
+			margin-top: -90px;
+			margin-bottom: 25px;
+		}
+		&__link{
+			font-size: 10px;
+			margin: 20px 0;
+		}
+		&__socialLink{
+			font-size: 10px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+		&__copy{
+			text-align: center;
+		}
+	}
+}

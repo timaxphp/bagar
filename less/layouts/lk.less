@@ -1,0 +1,415 @@
+.headerLk{
+	background: @primaryBlack;
+	.header__langChoose{
+		top: 25px;
+	}
+	&__menu{
+		display: block;
+		background: transparent url('../img/menu.png') center no-repeat scroll;
+		height: 90px;
+	}
+	&__logo{
+		margin-top: 30px;
+	}
+	&__profile{
+		position: relative;
+		color: #fff;
+		padding: 30px 0;
+		font-size: 18px;
+		cursor: pointer;
+		&:hover .headerLk__profileHide{
+			display: block;
+		}
+	}
+	&__profileName{
+		display: inline-block;
+		font-family: 'SFUIDisplay-Bold';
+		margin-left: 5px;
+	}
+	&__profileId{
+		display: inline-block;
+		font-family: 'SFUIDisplay-Thin';
+		text-transform: uppercase;
+	}
+	&__profileHide{
+		display: none;
+		position: absolute;
+		z-index: 9999;
+		left: -25px;
+		top: 99px;
+		padding-top: 25px;
+		font-size: 14px;
+		font-family: 'SFUIDisplay-Light';
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 30px;
+			top: 9px;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 15px solid black;
+		}
+	}
+	&__profileHideLink{
+		display: block;
+		color: #fff;
+		padding: 20px 30px;
+		background: @primaryBlack;
+		min-width: 230px;
+		border-bottom: solid 1px #4b4b4d;
+		&:last-child{
+			border-radius: 0 0 12px 12px;
+			border-bottom: none;
+		}
+		&:hover, &:focus, &:active, &-active{
+			color: @primaryBlack;
+			background: @primaryYellow;
+			text-decoration: none;
+		}
+	}
+}
+.navLk{
+	background: #f8f8f8;
+	&__item{
+		position: relative;
+		display: inline-block;
+		font-family: 'Fregat-Bold';
+		color: @primaryBlack;
+		margin-top: 60px;
+		margin-right: 5px;
+		padding: 25px 25px 25px 65px;
+		border-bottom: solid 8px transparent;
+		&:hover, &:focus, &:active, &-active{
+			color: @primaryBlack;
+			text-decoration: none;
+			border-color: @primaryYellow;
+		}
+	}
+	&__itemIcon{
+		font-family: 'icons';
+		font-size: 40px;
+		position: absolute;
+		left: 20px;
+		top: 10px;
+	}
+	&__itemIcon-small{
+		font-size: 32px;
+		top: 16px;
+	}
+	&__support{
+		background: transparent url('../img/support.png') center no-repeat scroll;
+		background-size: cover;
+		height: 25px;
+		width: 25px;
+		display: block;
+		position: absolute;
+		left: 20px;
+		top: 22px;
+	}
+}
+.sectionInfo{
+	margin-bottom: 35px;
+	.lkBalance{
+		margin-top: 35px;
+	}
+}
+.orderBot{
+	.lkSectionHeader{
+		margin: -85px 0 50px 0;
+	}
+	&__socialButton{
+		.button-v1;
+		font-family: 'Fregat-Bold';
+		position: relative;
+		padding: 5px 40px 5px 100px;
+		border-radius: 60px;
+		margin-top: 50px;
+		margin-bottom: 150px;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 51px;
+			width: 70px;
+			background: rgba(255,255,255, .3) url("../img/vk2.png") center no-repeat scroll;
+			border-radius: 40px;
+		}
+	}
+	&__socialHeader{
+		font-size: 38px;
+		font-family: 'Fregat-Bold';
+		margin: 50px 0 40px 0;
+	}
+	&__question{
+		position: relative;
+		margin-top: 15px;
+	}
+	&__questionNum{
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		border: solid 3px #c91922;
+		font-size: 40px;
+		color: #c91922;
+		background: #fff;
+		font-family: 'Fregat-Bold';
+		line-height: 92px;
+		width: 92px;
+		text-align: center;
+	}
+	&__questionText{
+		font-family: 'SFUIDisplay-Regular';
+		color: #c91922;
+		background: #f8f8f8;
+		padding: 35px 115px;
+		strong{
+			font-family: 'SFUIDisplay-Bold';
+		}
+		span{
+			display: none;
+		}
+	}
+	&__answer{
+		margin-top: 15px;
+		font-family: 'SFUIDisplay-Regular';
+		color: #24a45b;
+		background: #dcf5e5;
+		padding: 35px 25px;
+		border-left: 10px solid #24a45b;
+		margin-left: 105px;
+		strong{
+			font-family: 'SFUIDisplay-Bold';
+		}
+		span{
+			display: none;
+		}
+	}
+	&__ipSucessChange{
+		border-top: solid 1px #60b564;
+		margin: 100px 0;
+	}
+	&__ipSucessChangeButton{
+		border: solid 1px #60b564;
+		color: #60b564;
+		text-align: center;
+		border-radius: 30px;
+		font-family: 'Fregat-Bold';
+		line-height: 55px;
+		margin-top: -28px;
+		background: #fff;
+		text-transform: uppercase;
+	}
+	&__button{
+		.button-v1;
+		margin-top: 35px;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		font-family: 'Fregat-Bold';
+	}
+	&__button2{
+		.button-v1;
+		margin: 0 60px;
+		display: block;
+		text-align: center;
+		font-size: 18px;
+		font-family: 'Fregat-Bold';
+		position: relative;
+		&:before, &:after{
+			content: '';
+			display: block;
+			height: 1px;
+			width: 350px;
+			border-top: dashed 1px #c7c7c7;
+			position: absolute;
+			top: 20px;
+		}
+		&:before{
+			left: -380px;
+		}
+		&:after{
+			right: -380px;
+		}
+	}
+	&__button2Wr{
+		margin: 50px 0 100px 0;
+	}
+	&__ip{
+		border: solid 1px @primaryBlack;
+		border-radius: 30px;
+		margin-bottom: 20px;
+		margin-top: 50px;
+		.clearfix
+	}
+	&__ipItem{
+		font-size: 20px;
+		font-family: 'Fregat-Bold';
+		color: @primaryBlack;
+		padding: 10px 0;
+		&-br{
+			border-right: solid 1px @primaryBlack;
+		}
+	}
+	&__text{
+		color: @primaryBlack;
+		font-family: 'SFUIDisplay-Light';
+		strong{
+			font-family: 'SFUIDisplay-Bold';
+		}
+		&-error{
+			margin-top: 35px;
+			color: #c91922;
+			border-left: solid 8px #c91922;
+			padding: 10px 25px;
+		}
+		&-warning{
+			margin-top: 35px;
+			border-left: solid 8px @primaryYellow;
+			padding: 10px 25px;
+		}
+		&-info{
+			margin-top: 35px;
+			border-left: solid 8px @primaryBlack;
+			padding: 0 25px 10px 25px;
+			margin-bottom: 100px;
+		}
+	}
+	&.rate{
+		background: none;
+	}
+	& .rate__headerLink{
+		font-size: 26px;
+		text-transform: uppercase;
+		color: @primaryBlack;
+		margin: -35px 0 0 0;
+		padding-bottom: 15px;
+	}
+	& .rate__head{
+		background: transparent url('../img/rate-b2.png') center no-repeat scroll;
+		background-size: 100% 100%;
+	}
+}
+.lkFooter{
+	&__copy{
+		color: #aeaeae;
+		font-size: 14px;
+		font-family: 'SFUIDisplay-Light';
+		text-align: center;
+		padding: 35px 0;
+		border-top: solid 1px #aeaeae;
+	}
+}
+.payment{
+	background: rgba(0,0,0, .8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	display: none;
+	&__body{
+		background: #fff;
+		text-align: center;
+		margin-top: 100px;
+		border-radius: 35px;
+	}
+	&__header{
+		font-size: 24px;
+		font-family: 'Fregat-Bold';
+		text-transform: uppercase;
+		display: inline-block;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		position: relative;
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 50%;
+			bottom: -25px;
+			width: 60px;
+			height: 5px;
+			background: @primaryYellow;
+			transform: translateX(-50%);
+		}
+	}
+	&__text{
+		font-family: 'SFUIDisplay-Light';
+	}
+	&__accept{
+		font-family: 'SFUIDisplay-Light';
+		a{
+			text-decoration: underline;
+			color: @primaryBlack;
+			&:hover, &:active, &:focus{
+				color: @primaryBlack;
+			}
+		}
+	}
+	&__button{
+		.button-v1;
+		display: block;
+		width: 100%;
+		max-width: 250px;
+		margin: 25px auto;
+		font-family: 'Fregat-Bold';
+	}
+	&__button2{
+		display: inline-block;
+		font-size: 12px;
+		color: #9b9a9a;
+		text-decoration: underline;
+		&:hover, &:active, &:focus{
+			color: #9b9a9a;
+		}
+		margin-bottom: 40px;
+	}
+}
+.terms{
+	padding-bottom: 70px;
+	&__header{
+		font-size: 40px;
+		font-family: 'Fregat-Bold';
+		text-transform: uppercase;
+		margin-top: 70px;
+		padding-left: 60px;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 36px;
+			height: 44px;
+			background: transparent url('../img/term.png') center no-repeat scroll;
+		}
+	}
+	&__miniHeader{
+		font-size: 30px;
+		font-family: 'SFUIDisplay-Bold';
+		margin-top: 70px;
+		margin-bottom: 40px;
+	}
+	&__item{
+		font-family: 'SFUIDisplay-Bold';
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	&__item2{
+		font-family: 'SFUIDisplay-Light';
+		margin-top: 30px;
+		margin-bottom: 20px;
+		span{
+			font-family: 'SFUIDisplay-Bold';
+		}
+	}
+	&__info{
+		font-family: 'SFUIDisplay-Light';
+	}
+}

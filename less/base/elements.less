@@ -1,0 +1,62 @@
+.button-v1{
+	background: #ffd34e;
+	background: -moz-linear-gradient(top,  #ffd34e 20%, #d8a60e 80%);
+	background: -webkit-linear-gradient(top,  #ffd34e 20%,#d8a60e 80%);
+	background: linear-gradient(to bottom,  #ffd34e 20%,#d8a60e 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd34e', endColorstr='#d8a60e',GradientType=0 );
+	display: inline-block;
+	color: @primaryBlack;
+	line-height: 41px;
+	padding: 0 30px;
+	border-radius: 20px;
+	text-transform: uppercase;
+
+	&:hover, &:focus, &:active{
+		background: #ffd34e;
+		background: -moz-linear-gradient(top,  #d8a60e 20%, #ffd34e 80%);
+		background: -webkit-linear-gradient(top,  #d8a60e 20%, #ffd34e 80%);
+		background: linear-gradient(to bottom,  #d8a60e 20%, #ffd34e 80%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8a60e', endColorstr='#ffd34e',GradientType=0 );
+		color: @primaryBlack;
+		text-decoration: none;
+	}
+}
+.lkSectionHeader{
+	font-size: 38px;
+	text-transform: uppercase;
+	font-family: 'Fregat-Bold';
+}
+.lkBalance{
+	.clearfix
+	&__wallet{
+		text-align: center;
+		border-right: solid 1px #cdcdcd;
+	}
+	&__walletIcon{
+		font-family: 'icons';
+		font-size: 48px;
+		line-height: 49px;
+	}
+	&__walletText{
+		text-transform: uppercase;
+		font-size: 16px;
+		line-height: 14px;
+		font-family: 'Fregat-Bold';
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+	&__walletInfo{
+		text-align: center;
+		margin: 0;
+		background: #4eaf50;
+		font-family: 'Fregat-Bold';
+		color: #fff;
+		margin-left: 20px;
+		padding: 4px 0;
+		border-radius: 20px;
+		&-blue{
+			background: #5cbfdc;
+			margin-bottom: 15px;
+		}
+	}
+}
